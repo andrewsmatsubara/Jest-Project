@@ -19,6 +19,8 @@ describe('1 - O retorno do telefonema', () => {
   test('ocupado', () => {
     // assert.fail();
     // Insira seu teste assíncrono aqui
-    answerPhone('Tem alguém aí?').catch((error) => expect(error).toMatch('Infelizmente não podemos atender...'));
+    answerPhone('Tem alguém aí?').catch((error) => {
+      expect(error).toMatch('Infelizmente não podemos atender...');
+    });
   });
 });
